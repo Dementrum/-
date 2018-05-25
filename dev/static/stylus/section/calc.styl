@@ -1,0 +1,45 @@
+.calc
+	size(1072px, 650px)
+	border 2px solid active 
+	margin 0 auto
+	opacity 0.9
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items center
+	
+.tabs
+	width 100%
+	padding-top 26px
+	display flex
+	justify-content center
+	padding-bottom 8px
+
+.tab_left, .tab_right
+	border-radius 0 15px 0 0
+	background-image linear-gradient(to top, rgba(0, 0, 0, 0.77) 0%, #323131 100%)
+	width 200px
+	height 70px
+	font-size 18px
+	font-weight 700
+	text-align center
+	margin-right 1px
+	line-height 70px
+	cursor pointer
+	color #cecece
+
+.active
+	background active
+	color #000
+	position relative
+	&:before
+		content ""
+		display block
+		border-bottom 1px solid active
+		width 200px
+		position absolute
+		bottom -6px
+		
+.tab_left
+	border-radius 15px 0 0	
+	

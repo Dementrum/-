@@ -10,7 +10,16 @@ html
 
 body
 	font-family mainFont
+	height 100vh
+	background url(../img/general/bg.jpg) center no-repeat
+	background-size cover
+	font-family "Open-Sans",sans-serif
 
+.wrapper
+	min-height 100%
+	display flex
+	flex-direction row
+	align-items center
 
 h1,h2,h3,h4,h5,h6
 	margin 0
@@ -76,3 +85,6 @@ button
 // СТРАНИЦЫ
 // Стили главной страницы
 @import 'pages/index.styl'
+
+// Стили калькулятора
+@import 'section/calc.styl'
