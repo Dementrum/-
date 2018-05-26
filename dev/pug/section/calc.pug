@@ -2,7 +2,26 @@
 	.tabs
 		.tab_left.active Лендинг
 		.tab_right Многостраничник
-	.block#blocks-block
+	.blocks#blocks-block
 		.blocks-title Количество блоков
-		imput type="number"
-	.block#pages-block
+		input#counter-block.counter(type="number")
+	.blocks#pages-block
+			.blocks-title Количество страниц 
+			input#counter-pages.counter(type="number")
+	.blocks
+		.blocks-title Сколько часов на проект
+		input#counter-house.counter(type="number")
+	.blocks
+			.blocks-title Стоимость вашего часа
+			input#counter-rate.counter(type="number")
+	.addition
+		.addition-title Дополнительно
+		.addition-block
+			input#changes-check.checkbox(type="checkbox") 
+				span.checkbox-custom
+				| Возможность редактировать текст на сайте
+		.addition-block
+			input#cms.checkbox.checkbox-custom(type="checkbox") 
+			| Установка на CMS
+
+

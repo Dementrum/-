@@ -42,4 +42,45 @@
 		
 .tab_left
 	border-radius 15px 0 0	
+
+.counter
+	size(130px, 60px)
+	border 3px solid rgba(239,174,2 .6)
+	background-color transparent
+	text-align center
+	color active
+	font-size 48px
+	font-weight 700
+	
+.blocks
+	min-width 65%
+	display flex
+	justify-content space-between
+	align-items center
+	margin-bottom 30px
+	&-title
+		position relative
+		color #fff
+		font-family "Open Sans"
+		font-size 30px
+		font-weight 700
+		before()
+.addition
+	font-size 30px
+	font-weight 700
+	color active
+	&-title
+		text-align center
+	&-block
+		text-align left
+input
+	&.checkbox
+		display none
+.checkbox-custom
+	size(24px)
+	opacity .5
+	cursor pointer
+	border 2px solid #ccc
+	border-radius 3px
+	display block
 	
